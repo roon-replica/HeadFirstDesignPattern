@@ -1,4 +1,4 @@
-package ch1.duckGame.encapsulation.duck;
+package ch1.duckGame.encapsulation.behavior;
 
 import ch1.duckGame.encapsulation.behavior.*;
 
