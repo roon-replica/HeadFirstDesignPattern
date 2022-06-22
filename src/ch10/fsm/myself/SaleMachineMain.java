@@ -1,4 +1,4 @@
-package ch10.fsm;
+package ch10.fsm.myself;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -8,7 +8,7 @@ public class SaleMachineMain {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
-        SaleMachine saleMachine = new SaleMachine(MachineState.COIN_EMPTY, 10);
+        SaleMachine saleMachine = new SaleMachine(MachineState.COIN_EMPTY, 20);
         while (saleMachine.isSoldOut() == false) {
             String command = br.readLine();
 

@@ -1,15 +1,16 @@
-package ch10.fsm;
+package ch10.fsm.myself;
 
-import static ch10.fsm.MachineState.COIN_EMPTY;
-import static ch10.fsm.MachineState.COIN_INSERTED;
-import static ch10.fsm.MachineState.SALE;
-import static ch10.fsm.MachineState.SOLD_OUT;
+import static ch10.fsm.myself.MachineState.COIN_EMPTY;
+import static ch10.fsm.myself.MachineState.COIN_INSERTED;
+import static ch10.fsm.myself.MachineState.SALE;
+import static ch10.fsm.myself.MachineState.SOLD_OUT;
 
 public class SaleMachine {
     private final int PRICE = 1000;
 
     private MachineState nowState;
     private int stock;
+    private int count;
 
     public SaleMachine(MachineState initState, int stock) {
         nowState = initState;
@@ -54,14 +55,24 @@ public class SaleMachine {
         }
 
         stock -= 1;
-        System.out.printf("product saled. now stock = %d", stock);
+        count++;
 
-        if (stock == 1) {
+        if (count % 10 == 0) {
+            if (stock == 0) {
+                System.out.printf("보너스 알맹이에 당첨되긴 했는데 재고가 소진되었습니다.\n");
+            } else {
+                System.out.printf("보너스 알맹이에 당첨되었습니다.\n");
+                stock -= 1;
+            }
+        }
+
+        if (stock == 0) {
             nowState = SOLD_OUT;
         } else {
             nowState = COIN_EMPTY;
         }
-        System.out.println("now state = " + nowState);
+
+        System.out.printf("product saled. now stock = %d, now state = %s", stock, nowState.name());
     }
 
     public boolean isSoldOut() {
