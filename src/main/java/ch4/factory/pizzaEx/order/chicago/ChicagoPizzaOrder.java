@@ -1,15 +1,12 @@
 package ch4.factory.pizzaEx.order.chicago;
 
-import ch4.factory.pizzaEx.PizzaOrder;
+import ch4.factory.pizzaEx.order.PizzaOrder;
 import ch4.factory.pizzaEx.PizzaTypeNotFoundException;
 import ch4.factory.pizzaEx.pizza.Pizza;
 import ch4.factory.pizzaEx.pizza.PizzaType;
 import ch4.factory.pizzaEx.pizza.franchise.chicago.ChicagoCheesePizza;
 import ch4.factory.pizzaEx.pizza.franchise.chicago.ChicagoPepperoniPizza;
 import ch4.factory.pizzaEx.pizza.franchise.chicago.ChicagoPotatoPizza;
-import ch4.factory.pizzaEx.pizza.franchise.newyork.NewYorkCheesePizza;
-import ch4.factory.pizzaEx.pizza.franchise.newyork.NewYorkPepperoniPizza;
-import ch4.factory.pizzaEx.pizza.franchise.newyork.NewYorkPotatoPizza;
 
 public class ChicagoPizzaOrder extends PizzaOrder {
     @Override

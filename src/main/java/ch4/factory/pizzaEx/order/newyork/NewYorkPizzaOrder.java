@@ -1,6 +1,6 @@
 package ch4.factory.pizzaEx.order.newyork;
 
-import ch4.factory.pizzaEx.PizzaOrder;
+import ch4.factory.pizzaEx.order.PizzaOrder;
 import ch4.factory.pizzaEx.PizzaTypeNotFoundException;
 import ch4.factory.pizzaEx.pizza.*;
 import ch4.factory.pizzaEx.pizza.franchise.newyork.NewYorkCheesePizza;

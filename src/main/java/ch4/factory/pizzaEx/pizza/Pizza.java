@@ -1,6 +1,6 @@
 package ch4.factory.pizzaEx.pizza;
 
-import ch4.factory.pizzaEx.PizzaOrder;
+import ch4.factory.pizzaEx.order.PizzaOrder;
 
 public abstract class Pizza {
     public PizzaType pizzaType;

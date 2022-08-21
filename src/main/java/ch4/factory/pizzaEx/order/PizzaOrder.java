@@ -1,4 +1,4 @@
-package ch4.factory.pizzaEx;
+package ch4.factory.pizzaEx.order;
 
 import ch4.factory.pizzaEx.PizzaTypeNotFoundException;
 import ch4.factory.pizzaEx.pizza.Pizza;
