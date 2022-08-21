@@ -2,7 +2,7 @@ package ch4.factory.pizzaEx.pizza;
 
 import ch4.factory.pizzaEx.PizzaOrder;
 
-public class Pizza {
+public abstract class Pizza {
     public PizzaType pizzaType;
 
     public void receivedOrder(PizzaOrder order) {
