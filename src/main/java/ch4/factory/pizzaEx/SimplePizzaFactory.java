@@ -1,6 +1,6 @@
-package ch4.factory.pizza;
+package ch4.factory.pizzaEx;
 
-import ch4.factory.pizza.pizza.*;
+import ch4.factory.pizzaEx.pizza.*;
 
 // 피자 객체 생성만 담당!(Single Responsibility)
 // 피자 객체 생성 작업을 캡슐화해 놓음으로써 피자 생성 로직을 수정할 때, 여기저기서 수정하지 않고 여기만 수정하면 됨!

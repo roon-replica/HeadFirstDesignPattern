@@ -1,4 +1,4 @@
-package ch4.factory.pizza;
+package ch4.factory.pizzaEx;
 
 public class PizzaTypeNotFoundException extends Throwable {
     private String msg;

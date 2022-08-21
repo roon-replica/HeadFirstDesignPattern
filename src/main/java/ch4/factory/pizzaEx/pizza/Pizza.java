@@ -1,11 +1,11 @@
-package ch4.factory.pizza.pizza;
+package ch4.factory.pizzaEx.pizza;
 
-import ch4.factory.pizza.PizzaOrder;
+import ch4.factory.pizzaEx.PizzaOrder;
 
 public class Pizza {
     public PizzaType pizzaType;
 
-    public void prepare(PizzaOrder order) {
+    public void receivedOrder(PizzaOrder order) {
         System.out.println("receive order");
         order.state = PizzaOrder.OrderState.RECEIVED_ORDER;
     }
