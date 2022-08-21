@@ -22,6 +22,6 @@ public class Pizza {
 
     @Override
     public String toString() {
-        return "피자타입: " + this.pizzaType.name();
+        return "피자타입: " + this.pizzaType.name() +" 클래스명: " + this.getClass().getSimpleName();
     }
 }
