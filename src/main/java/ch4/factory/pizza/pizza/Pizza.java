@@ -1,7 +1,9 @@
-package ch4.factory.pizza;
+package ch4.factory.pizza.pizza;
+
+import ch4.factory.pizza.PizzaOrder;
 
 public class Pizza {
-    PizzaType pizzaType;
+    public PizzaType pizzaType;
 
     public void prepare(PizzaOrder order) {
         System.out.println("receive order");
@@ -16,10 +18,6 @@ public class Pizza {
     public void box(PizzaOrder order) {
         System.out.println("boxing pizza");
         order.state = PizzaOrder.OrderState.BOXED;
-    }
-
-    enum PizzaType {
-        CHEESE, POTATO, PEPPERONI
     }
 
     @Override
