@@ -1,4 +1,4 @@
-package ch1.duckGame.encapsulation.behavior;
+package ch1.duckGame.encapsulation.behavior.cry;
 
 public class CryEagle implements CryBehavior {
     @Override

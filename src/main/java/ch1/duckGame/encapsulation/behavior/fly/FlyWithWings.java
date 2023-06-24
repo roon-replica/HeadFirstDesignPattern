@@ -1,4 +1,4 @@
-package ch1.duckGame.encapsulation.behavior;
+package ch1.duckGame.encapsulation.behavior.fly;
 
 public class FlyWithWings implements FlyBehavior {
     @Override
