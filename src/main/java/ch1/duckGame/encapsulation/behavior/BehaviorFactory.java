@@ -16,4 +16,8 @@ public class BehaviorFactory {
     public static CryBehavior muteCry() {
         return new MuteCry();
     }
+
+    public static CryBehavior cryEagle() {
+        return new CryEagle();
+    }
 }
