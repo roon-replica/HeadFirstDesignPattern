@@ -1,8 +1,8 @@
 package ch1.duckGame.encapsulation.behavior;
 
-public class MuteQuack implements QuackBehavior{
+public class MuteCry implements CryBehavior {
     @Override
-    public void quack() {
+    public void cry() {
         System.out.println("mute (quack quack..)");
     }
 }

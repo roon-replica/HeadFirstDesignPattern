@@ -1,24 +1,26 @@
 package ch1.duckGame.encapsulation.duck;
 
 import ch1.duckGame.encapsulation.behavior.FlyBehavior;
-import ch1.duckGame.encapsulation.behavior.QuackBehavior;
+import ch1.duckGame.encapsulation.behavior.CryBehavior;
 
 public abstract class Duck {
+    // duck 클래스와 행동(fly, quack)을 분리하여 행동들의 재사용성을 높인거라고 함..
     FlyBehavior flyBehavior;
-    QuackBehavior quackBehavior;
+    CryBehavior cryBehavior;
 
-    public Duck(){}
+    public Duck() {
+    }
 
-//    public Duck(QuackBehavior quackBehavior, FlyBehavior flyBehavior){
-//        this.quackBehavior = quackBehavior;
-//        this.flyBehavior = flyBehavior;
-//    }
+    public Duck(CryBehavior cryBehavior, FlyBehavior flyBehavior) {
+        this.cryBehavior = cryBehavior;
+        this.flyBehavior = flyBehavior;
+    }
 
     public void fly() {
         flyBehavior.fly();
     }
 
-    public void quack() {
-        quackBehavior.quack();
+    public void cry() {
+        cryBehavior.cry();
     }
 }

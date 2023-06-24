@@ -4,10 +4,10 @@ public class Main {
     public static void main(String[] args) {
         Duck readHeadDuck = DuckFactory.redHeadDuck();
         readHeadDuck.fly();
-        readHeadDuck.quack();
+        readHeadDuck.cry();
 
         Duck toyDuck = DuckFactory.toyDuck();
         toyDuck.fly();
-        toyDuck.quack();
+        toyDuck.cry();
     }
 }
