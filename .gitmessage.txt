@@ -1,0 +1,14 @@
+# 제목 ex) feat(2.observer): Add sample code
+
+# 본문 ex) Add another example
+
+
+# <type>(#chapter-number #pattern-name): commit-message
+
+# --- COMMIT END ---
+# <type> list
+# feat: 디자인 패턴 샘플 코드
+# refactor: 기능 변경없이 구조 변경
+# fix: 버그 픽스
+# docs: 문서
+# test: 테스트
