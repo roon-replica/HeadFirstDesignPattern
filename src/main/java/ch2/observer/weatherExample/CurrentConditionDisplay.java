@@ -1,4 +1,4 @@
-package ch2.observer;
+package ch2.observer.weatherExample;
 
 public class CurrentConditionDisplay implements Observer, DisplayElement {
     private float temperature, humidity, pressure;

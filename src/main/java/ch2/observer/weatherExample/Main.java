@@ -1,4 +1,4 @@
-package ch2.observer;
+package ch2.observer.weatherExample;
 
 import java.util.ArrayList;
 
